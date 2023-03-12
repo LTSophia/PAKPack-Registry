@@ -28,11 +28,11 @@ namespace PAKPack_Registry
             Registry.SetValue(shell, "MUIVerb", "PAKPack");
             Registry.SetValue(shell, "ExtendedSubCommandsKey", subkeyCM + "\\PAK");
             Registry.SetValue(cmPak + "\\shell\\unpack", "MUIVerb", "Unpack File");
-            Registry.SetValue(cmPak + "\\shell\\unpack\\command", "", $"{PAKPackPath} unpack %1");
+            Registry.SetValue(cmPak + "\\shell\\unpack\\command", "", $"{PAKPackPath} unpack \"%1\"");
             Registry.SetValue(cmPak + "\\shell\\pack", "MUIVerb", "Pack File");
             Registry.SetValue(cmPak + "\\shell\\pack", "ExtendedSubCommandsKey", subkeyCM + "\\packing");
             Registry.SetValue(cmPak + "\\shell\\list", "MUIVerb", "PAK File Details");
-            Registry.SetValue(cmPak + "\\shell\\list\\command", "", $"{PAKPackPath} list %1");
+            Registry.SetValue(cmPak + "\\shell\\list\\command", "", $"{PAKPackPath} list \"%1\"");
 
             Registry.SetValue(folShell, "MUIVerb", "PAKPack");
             Registry.SetValue(folShell, "ExtendedSubCommandsKey", subkeyFolCM + "\\PAK");
@@ -42,14 +42,14 @@ namespace PAKPack_Registry
             foreach (string version in new string[] {"v1", "v2", "v2be", "v3", "v3be"})
             {
                 Registry.SetValue(cmpacking + "\\shell\\" + version, "MultiSelectModel", "Player");
-                Registry.SetValue(cmpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} packoradd {version} %1");
+                Registry.SetValue(cmpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} packoradd {version} \"%1\"");
                 Registry.SetValue(cmpacking + "\\shell\\" + version, "MultiSelectModel", "Player");
-                Registry.SetValue(cmpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} packoradd {version} %1");
+                Registry.SetValue(cmpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} packoradd {version} \"%1\"");
 
                 Registry.SetValue(folpacking + "\\shell\\" + version, "MultiSelectModel", "Player");
-                Registry.SetValue(folpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} pack %1 {version}");
+                Registry.SetValue(folpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} pack \"%1\" {version}");
                 Registry.SetValue(folpacking + "\\shell\\" + version, "MultiSelectModel", "Player");
-                Registry.SetValue(folpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} pack %1 {version}");
+                Registry.SetValue(folpacking + "\\shell\\" + version + "\\command", "", $"{PAKPackPath} pack \"%1\" {version}");
 
             }
 
