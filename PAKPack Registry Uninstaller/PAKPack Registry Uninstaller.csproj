@@ -1,13 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>PAKPack_Registry_Uninstaller</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <StartupObject>PAKPack_Registry_Uninstaller.Program</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>true</PublishSingleFile>
+    <TargetFramework>net7.0-windows</TargetFramework>
   </PropertyGroup>
 
 </Project>

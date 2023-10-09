@@ -5,22 +5,32 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAKPack Registry", "PAKPack Registry\PAKPack Registry.csproj", "{309A8190-859A-439F-B20A-2D56AC51561B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAKPack Registry Uninstaller", "PAKPack Registry Uninstaller\PAKPack Registry Uninstaller.csproj", "{DD181B91-E935-417E-935B-62A9E731F731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAKPack Registry Uninstaller", "PAKPack Registry Uninstaller\PAKPack Registry Uninstaller.csproj", "{DD181B91-E935-417E-935B-62A9E731F731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{309A8190-859A-439F-B20A-2D56AC51561B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{309A8190-859A-439F-B20A-2D56AC51561B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309A8190-859A-439F-B20A-2D56AC51561B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{309A8190-859A-439F-B20A-2D56AC51561B}.Debug|x64.Build.0 = Debug|Any CPU
 		{309A8190-859A-439F-B20A-2D56AC51561B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309A8190-859A-439F-B20A-2D56AC51561B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309A8190-859A-439F-B20A-2D56AC51561B}.Release|x64.ActiveCfg = Release|Any CPU
+		{309A8190-859A-439F-B20A-2D56AC51561B}.Release|x64.Build.0 = Release|Any CPU
 		{DD181B91-E935-417E-935B-62A9E731F731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD181B91-E935-417E-935B-62A9E731F731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD181B91-E935-417E-935B-62A9E731F731}.Debug|x64.ActiveCfg = Debug|x64
+		{DD181B91-E935-417E-935B-62A9E731F731}.Debug|x64.Build.0 = Debug|x64
 		{DD181B91-E935-417E-935B-62A9E731F731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD181B91-E935-417E-935B-62A9E731F731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD181B91-E935-417E-935B-62A9E731F731}.Release|x64.ActiveCfg = Release|x64
+		{DD181B91-E935-417E-935B-62A9E731F731}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
